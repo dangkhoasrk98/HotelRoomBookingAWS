@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>LuxuryHotel a Hotel Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/dangkyform.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  <body>
+  
+  <form action="" method="POST">
+  <div class="container">
+    <h1 align="center">ĐĂNG KÝ TÀI KHOẢN</h1>
+    <hr>
+    <% if (error){ %>
+
+      <div class="alert alert-light" role="alert">
+        <%= error %>
+      </div>
+     
+    <% } %>
+  </div>
+    <label for="loaitk"><b>Loại tài khoản</b></label>
+	<div>
+  <select name="type" id="loaitk" class="form-control">
+    <option value="NV">Nhân viên</option>
+    <option value="QL">Quản lý</option>
+  </select>
+  </div>
+
+    <label for="name"><b>Tên</b></label>
+    <input type="text" placeholder="Nhập tên" id="name" name="name" required>
+  
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Nhập email" id="email" name="email" required>
+
+    <label for="psw"><b>Mật khẩu</b></label>
+    <input type="password" placeholder="Nhập mật khẩu" id="psw" name="password" required>
+
+    <hr>
+
+    
+    <button type="submit" class="registerbtn" >Đăng ký</button>
+  </div>
+
+</form>
+    
+  </body>
+</html>
